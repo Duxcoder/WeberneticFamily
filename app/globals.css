@@ -1,11 +1,34 @@
 :root {
   --max-width: 1920px;
+  --text-content-size: 13px;
+  --title-content-size: 17px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --text-content-size: 15px;
+    --title-content-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --text-content-size: 17px;
+    --title-content-size: 26px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --title-content-size: 30px;
+  }
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Box sizing rules */
