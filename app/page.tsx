@@ -9,12 +9,14 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <main className={styles.main}>
+    <>
       {showModal ? (
         <LoginModal setShowModal={setShowModal} />
       ) : (
-        <Welcome setShowModal={setShowModal} />
+        <main className={styles.main}>
+          <Welcome setShowModal={setShowModal} />
+        </main>
       )}
-    </main>
+    </>
   );
 }
