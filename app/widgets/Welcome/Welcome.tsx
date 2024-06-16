@@ -13,7 +13,13 @@ export default function Welcome({ setShowModal }: { setShowModal: (value: boolea
           За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних
           и малых проектов. Используя знания и накопленный опыт мы можем предложить
         </p>
-        <BaseButton onClick={handleButtonClick}>Попробовать бесплатно</BaseButton>
+        <BaseButton
+          onClick={handleButtonClick}
+          icon={
+            <Image src="/arrow.svg" alt="try free" width="36" height="36" className={styles.logo} />
+          }>
+          Попробовать бесплатно
+        </BaseButton>
       </div>
       <div className={styles.imgContainer}>
         <Image
@@ -23,6 +29,7 @@ export default function Welcome({ setShowModal }: { setShowModal: (value: boolea
           height="0"
           sizes="100vw"
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          priority
         />
       </div>
     </section>

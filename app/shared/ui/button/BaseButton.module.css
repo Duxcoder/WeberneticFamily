@@ -6,6 +6,8 @@
   padding: 10px 10px 10px 18px;
   min-width: 280px;
   background: #244c98;
+  cursor: pointer;
+  border: none;
   transition: background 0.3s;
   &:hover {
     background: #161819;
@@ -14,6 +16,38 @@
     &>.logo {
       transform: scale(0.95);
       transition: 0.3s;
+    }
+  }
+  &.login-light, &.login-dark {
+    justify-content: center;
+    padding: 18px 12px;
+    border: 1px solid #244c98;
+    border-radius: 4px;
+    .label {
+      font-size: 18px;
+    }
+  }
+  &.login-light {
+    background: transparent;
+     &:hover, &:active {
+      background: #244c98;
+      border: 1px solid #244c98;
+      .label {
+        color: #fff;
+    }
+     }
+    .label {
+      color: #244c98;
+    }
+  }
+  &.login-dark {
+    background: #244c98;
+    &:hover, &:active {
+      background: #161819;
+      border: 1px solid #161819;
+  }
+    .label {
+      color: #fff;
     }
   }
 }
